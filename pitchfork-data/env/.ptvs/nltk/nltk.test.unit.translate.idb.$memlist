@@ -1,0 +1,10 @@
+test_stack_decoder
+test_ibm3
+test_ibm2
+test_ibm1
+test_ibm5
+test_ibm4
+test_gdfa
+test_nist
+test_bleu
+test_ibm_model

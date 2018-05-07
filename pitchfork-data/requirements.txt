@@ -1,0 +1,11 @@
+click
+Flask
+itsdangerous
+Jinja2
+MarkupSafe
+nltk
+Package
+pip
+setuptools
+six
+Werkzeug

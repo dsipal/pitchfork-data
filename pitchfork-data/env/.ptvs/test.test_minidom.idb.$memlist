@@ -1,0 +1,14 @@
+Node
+findfile
+create_doc_with_doctype
+tstfile
+MinidomTest
+getDOMImplementation
+create_doc_without_doctype
+pickle
+xml
+parse
+parseString
+create_nonempty_doctype
+Document
+unittest

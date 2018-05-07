@@ -1,0 +1,79 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row">
+    <h1>{{name}}</h1>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Average Score</h3>
+        <h3>{{avg_score}}</h3>
+    </div>
+    <div class="col-sm-6">
+        <h3>Guessed Gender</h3>
+        <h3>{{gender_guess}}</h3>
+    </div>
+</div>
+
+<hr />
+
+<div class="row">
+    <h3 class="col-sm-6">Adjectives</h3>
+    <h3 class="col-sm-6">Verbs</h3>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <table class="table">
+            <th scope="col">Word</th>
+            <th scope="col">Amount</th>
+            {% for item in adjectives %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="col-sm-6">
+        <table class="table">
+            <th scope="col">Word</th>
+            <th scope="col">Amount</th>
+            {% for item in verbs %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+<hr />
+
+<h3 class="row">Reviews</h3>
+<div class="row">
+
+    <table class="table">
+        <th scope="col">Album</th>
+        <th scope="col">Pitchfork URL</th>
+        <th scope="col">Score</th>
+
+        {% for item in reviews %}
+        <tr>
+            <td>{{item.album}}</td>
+            <td><a href={{item.url}}>{{item.url}}</a></td>
+            <td>{{item.score}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+
+{% endblock %}
