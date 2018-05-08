@@ -4,7 +4,6 @@ This script runs the pitchfork_data application using a development server.
 
 from os import environ
 from pitchfork_data import app
-from Pitchfork import Pitchfork
 
 if __name__ == '__main__':
     HOST = environ.get('SERVER_HOST', 'localhost')
