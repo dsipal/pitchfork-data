@@ -4,10 +4,10 @@ from Review import Review
 
 class Pitchfork(object):
     #db vars
-    host = "itzo.fun"
-    user = "admin_sexuality"
-    password = "P3297zv74o"
-    db = "admin_wgss"
+    host = ""
+    user = ""
+    password = ""
+    db = ""
 
     def __init__(self, artists = {}, reviews = {}):
         self.artists = artists
